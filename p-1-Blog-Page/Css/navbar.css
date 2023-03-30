@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #000709;
+    
+}
+
+.brand {
+    color: #11161A;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    color: #2015ff;
+    background-color: #00000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    border: 2px solid #2015ff;
+    padding: 5px 20px;
+    border-radius: 7px;
+
+}
+.navbar a:hover {
+    color: #fff;
+    background-color: #2015ff;
+}

@@ -1,0 +1,42 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside h3 {
+    margin: 8px 0;
+}
+
+.aside-cards {
+    width: 150px;
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #454F58;
+    /* border: 2px solid red; */
+    /* position: relative; */
+}
+
+.aside-cards img {
+    width: 100%;
+    height: 125px;
+    border-radius: 10px 10px 0 0;
+    /* border: 2px solid rgb(56, 241, 14); */
+}
+
+.aside-cards a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+    .aside-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
