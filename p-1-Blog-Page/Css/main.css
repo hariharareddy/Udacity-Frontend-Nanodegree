@@ -1,51 +1,32 @@
+@import url(navbar.css);
+@import url(aside.css);
+@import url(footer.css);
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.item {
-    width: 300px;
-    height: 300px;
-    background-color: #ddd;
-    border: 1px solid black;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
 body {
     height: 100vh;
     display: grid;
     grid-template-areas: 
     "header header header header"
-    "article article article aside"
+    "section section section aside"
     "footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 175px;
     grid-template-rows: 50px 1fr 100px;
-}
+    background-image: url("https://odc.officeapps.live.com/odc/stat/images/hrd/Background-blurryGradient.svg");
 
-.header,
-.article,
-.aside,
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-    gap: 25px;
-    background-color: aqua;
-    border: 1px solid black;
+    
 }
 
 .header {
     grid-area: header;
 }
 
-.article {
-    grid-area: article;
+.section {
+    grid-area: section;
 }
 
 .aside {
@@ -56,16 +37,78 @@ body {
     grid-area: footer;
 }
 
+.item {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+} 
+
+.article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.section h3 {
+    margin-left: 40px;
+    padding: 5px;
+}
+
+.item img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    }
+.article-headline {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+.btn {
+    width: 200px;
+    color: #15c26b;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    border: 2px solid #15c26b;
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #15c26b;
+}
+
+
+
+
 @media screen and (max-width: 420px) {
     body {
         height: 100vh;
         display: grid;
         grid-template-areas: 
         "header"
-        "article"
+        "section"
         "aside"
         "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 1fr 200px 100px;
+        grid-template-rows: 50px 1fr 415px 100px;
     }
+
+    .section h3 {
+        text-align: center;
+    }
+    
 }
