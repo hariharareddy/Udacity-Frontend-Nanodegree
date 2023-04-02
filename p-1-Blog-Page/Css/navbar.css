@@ -5,14 +5,13 @@
     align-items: center;
     padding: 10px;
     background-color: #fff;
-    border-bottom: 2px solid #000709;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .brand {
     color: #11161A;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     cursor: default;
 }
@@ -32,4 +31,15 @@
 .navbar a:hover {
     color: #fff;
     background-color: #2015ff;
+}
+
+@media screen and (max-width: 370px) {
+    .brand {
+        font-size: 22px;
+    }
+    .navbar a {
+        margin-left: 4px;
+        padding: 5px 10px;
+        font-size: 18px; 
+    }
 }

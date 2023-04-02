@@ -3,10 +3,10 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #11161a;
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #000709;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 .foo-ul {
