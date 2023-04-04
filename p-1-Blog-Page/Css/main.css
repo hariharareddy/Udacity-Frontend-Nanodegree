@@ -39,7 +39,7 @@ body {
 
 .item {
     width: 350px;
-    height: 350px;
+    height: 370px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -82,9 +82,24 @@ body {
     padding: 10px;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin: 5px;
+    color: #000709;
+}
+
+a {
+    text-decoration: none;
+}
+
 .btn {
     width: 200px;
-    color: c26b;
+    color: #000709;
     font-size: 20px;
     font-weight: 500;
     margin-left: 20px;
