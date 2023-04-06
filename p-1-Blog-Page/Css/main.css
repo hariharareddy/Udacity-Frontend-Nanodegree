@@ -126,6 +126,7 @@ a {
         "aside"
         "footer";
         grid-template-rows: 50px 1fr 430px 120px;
+        grid-template-columns: 1fr;
     }
 
     
