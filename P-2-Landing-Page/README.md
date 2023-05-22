@@ -15,4 +15,3 @@ You can view my live website at https://hariharareddy.github.io/Udacity-Frontend
 # Usage
 Landing Page contains top navigation bar when users clicks on any menu, the page will scroll smoothly to the corresponding section. The section which is currently in view port has some styling 
 applied to differentiate from other sections and the navbar menu will also be highlighted for better user experience.
-
