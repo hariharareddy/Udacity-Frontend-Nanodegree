@@ -1,7 +1,7 @@
 # Landing Page Project
 This is second project in the Udacity Frontend Nano Degree. It is all about manipulating Dom using JavaScript.
 The Navigation should be built dynamically as an unordered list. Starting with empty ul and dynamically building navigation using Append, appendChild, and innerHTML.
-It should be clear which section is being viewed while scrolling through the page. When we click an item from the navigation menu, the link should scroll to the appropriate section smoothly.
+The section is being viewed while scrolling through the page will be highlighted. When we click an item from the navigation menu, the link will scroll to the appropriate section smoothly.
 # Table Of Contents
 * [Instructions](#instructions)
 * [Installation](#installation)
