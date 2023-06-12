@@ -3,8 +3,7 @@ const apiKey = "&appid=8ba9b73993cd752541cb6438c5880d2c&units=imperial";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
-console.log(newDate);
+let newDate = d.getMonth() + 1 +'.'+ d.getDate()+'.'+ d.getFullYear();
 // Event listener to add function to existing HTML DOM element
 document.getElementById('generate').addEventListener('click', doAction);
 
@@ -25,8 +24,7 @@ function doAction(event) {
 
 /* Function to GET Web API Data*/
 const fetchWeatherData = async (baseURL, zip, apiKey) => {
-    const url = baseURL + zip + ",IN" + apiKey;
-    console.log(url);
+    const url = baseURL + zip + apiKey;
     const response = await fetch(url);
 
     try {
@@ -63,15 +61,12 @@ const retrieveData = async () =>{
     try {
     // Transform into JSON
     const allData = await request.json()
-    console.log(allData)
     // Write updated data to DOM elements
-    document.getElementsByClassName('temp').innerHTML = Math.round(allData.temperature)+ 'degrees';
-    document.getElementsByClassName('content').innerHTML = allData.userResponse;
-    document.getElementsByClassName('date').innerHTML =allData.date;
-    console.log("updated data")
+    document.getElementById('temp').innerHTML ='Temperature is ' + Math.round(allData.temperature) + '°';
+    document.getElementById('date').innerHTML = 'Date: ' + allData.date;
+    document.getElementById('content').innerHTML = 'You are feeling ' + allData.userResponse;
     }
     catch(error) {
       console.log("error", error);
-      // appropriately handle the error
     }
    }

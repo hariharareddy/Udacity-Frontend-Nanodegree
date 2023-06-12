@@ -1,7 +1,5 @@
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+    font-family: "Open Sans",sans-serif, verdana;
 }
 
 .app-container {
@@ -21,7 +19,7 @@ body {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
 }
 
 .headline {
@@ -100,20 +98,22 @@ button:hover {
 .entry {
     height: 250px;
     width: 100%;
+    margin-bottom: 0;
     color: #fff;
     text-align: center;
     background-color: #72bdec;
+    border-radius: 0 0 10px 10px;
 }
 
 .entry-holder {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.date,
-.temp,
-.content {
+#date,
+#temp,
+#content {
     padding: 10px;
     font-size: 25px;
     color: #fff;
@@ -125,3 +125,8 @@ button:focus {
     outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
