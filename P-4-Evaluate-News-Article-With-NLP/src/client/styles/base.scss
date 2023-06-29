@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
 main {
@@ -12,3 +13,60 @@ section {
     max-width: 800px;
     margin: 50px auto;
 }
+ main p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+ }
+
+#values {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#values p { 
+    font-size: 18px;
+    word-wrap: break-word;
+}
+ .res-holder {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: 315px;
+    padding: 6px 3px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #dcf9e0 0%, #fff 30.21%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    // padding: 5px 0;
+    font-size: 20px;
+ }
+
+ strong {
+    font-weight: 600;
+ }
+ 
+ table{
+    margin-top: 5px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    // background-color: #009879;
+    background: #1aa06d;
+    font-weight: 532;
+}
+
+th,
+td {
+    padding: 0.4rem;
+}
+
+tr:nth-of-type(even) {
+    background-color: #c2dedc;
+}
+
+
