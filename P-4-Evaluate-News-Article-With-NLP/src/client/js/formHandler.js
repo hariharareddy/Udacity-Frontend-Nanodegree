@@ -48,12 +48,6 @@ function handleSubmit(event) {
     } else {
       alert("Please enter valid url");
     }
-
-    // fetch('http://localhost:8081/test')
-    // .then(res => res.json())
-    // .then(function(res) {
-    //     document.getElementById('results').innerHTML = res.message
-    // })
 }
 
 const postData = async (url = '', data = {}) => {
@@ -74,7 +68,6 @@ const postData = async (url = '', data = {}) => {
         console.log("Error occurred: ", error.message);
     }
 };
-
 
 export { handleSubmit,
         postData }
