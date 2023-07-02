@@ -9,6 +9,7 @@ function handleSubmit(event) {
     if (Client.checkForName(formText)) {
     //   console.log("::: Form Submitted :::");
       inpform.classList.add('loading');
+      values.innerHTML = `<p>Analysing Please wait...</p><br><p>Powered by Meaning Cloud Api</p>`;
       Client.postData("/analyse", { url: formText }).then((res) => {
         inpform.classList.remove('loading');
         if (res.status.code === "0") {
@@ -46,7 +47,10 @@ function handleSubmit(event) {
         }
       });
     } else {
-      alert("Please enter valid url");
+      values.innerHTML = `<p>Please enter valid url</p>`;
+      setTimeout(() => {
+        values.innerHTML = ""
+      },2000)
     }
 }
 

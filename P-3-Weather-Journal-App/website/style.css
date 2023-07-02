@@ -1,4 +1,7 @@
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Open Sans",sans-serif, verdana;
 }
 
@@ -33,6 +36,51 @@
     text-align: center;
     color: #fff;
 }
+
+.country-selector {
+    width: 100%;
+    padding: 10px; /* Adjust the width as per your design */
+  }
+  
+  .country-search {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2015FF;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    background: transparent;
+  }
+  
+  /* Style the dropdown arrow */
+  .country-search:after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style the options */
+  .country-search option {
+    padding: 5px;
+    color: #000709;
+    background-color: #fff;
+  }
+  
+  /* Style the selected option */
+  .country-search option:checked {
+    background-color: #fff;
+    background: transparent;
+  }
+  
+  /* Style the dropdown when it's open */
+  .country-search:focus {
+    outline: none;
+    border-color: #0084ff;
+    box-shadow: 0 0 5px #0084ff;
+  }
 
 .holder {
     margin: 10px;
@@ -74,6 +122,7 @@ input {
 #zip::placeholder,
 #feel-input::placeholder {
     color: #fff;
+    font-size: 20px;
 }
 
 button {

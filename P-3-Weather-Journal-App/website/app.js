@@ -11,9 +11,10 @@ document.getElementById('generate').addEventListener('click', doAction);
 function doAction(event) {
     const zipCode = document.getElementById('zip').value;
     const feelings = document.getElementById('feel-input').value;
+    const countryCode = document.getElementById('country-dropdown').value;
     document.getElementById('zip').value = "";
     document.getElementById('feel-input').value = "";   
-    fetchWeatherData(baseURL, zipCode, apiKey)
+    fetchWeatherData(baseURL, zipCode, countryCode, apiKey)
     .then((data) => {
         postData('/add', {temperature: data.main.temp, date: newDate, userResponse: feelings})
     })
@@ -23,8 +24,8 @@ function doAction(event) {
 
 
 /* Function to GET Web API Data*/
-const fetchWeatherData = async (baseURL, zip, apiKey) => {
-    const url = baseURL + zip + apiKey;
+const fetchWeatherData = async (baseURL, zip, countryCode, apiKey) => {
+    const url = baseURL + zip + "," + countryCode + apiKey;
     const response = await fetch(url);
 
     try {
